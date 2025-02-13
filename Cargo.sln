@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cargo.API", "Cargo.API\Cargo.API.csproj", "{22184D81-4F60-4C63-A3B2-0E65F8AF87FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cargo.Service", "Cargo.Service\Cargo.Service.csproj", "{E538AB0D-E3ED-46F7-A473-D64AC7C808BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cargo.Repository", "Cargo.Repository\Cargo.Repository.csproj", "{1BA13997-97E1-4702-9717-F0B6ACB5734F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22184D81-4F60-4C63-A3B2-0E65F8AF87FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22184D81-4F60-4C63-A3B2-0E65F8AF87FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22184D81-4F60-4C63-A3B2-0E65F8AF87FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22184D81-4F60-4C63-A3B2-0E65F8AF87FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E538AB0D-E3ED-46F7-A473-D64AC7C808BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E538AB0D-E3ED-46F7-A473-D64AC7C808BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E538AB0D-E3ED-46F7-A473-D64AC7C808BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E538AB0D-E3ED-46F7-A473-D64AC7C808BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA13997-97E1-4702-9717-F0B6ACB5734F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA13997-97E1-4702-9717-F0B6ACB5734F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA13997-97E1-4702-9717-F0B6ACB5734F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA13997-97E1-4702-9717-F0B6ACB5734F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
