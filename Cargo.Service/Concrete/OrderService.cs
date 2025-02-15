@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
-using Azure.Core;
 using Cargo.Repository.Abstract;
-using Cargo.Repository.Concrete;
 using Cargo.Repository.Entities;
 using Cargo.Service.Abstract;
 using Cargo.Service.Dto.Order;
@@ -13,16 +11,14 @@ public class OrderService : IOrderService
 {
     private readonly IOrderRepository _orderRepository;
     private readonly ICarrierConfigurationRepository _carrierConfigurationRepository;
-    private readonly ICarrierRepository _carrierRepository;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public OrderService(IOrderRepository orderRepository, IUnitOfWork unitOfWork, IMapper mapper, ICarrierRepository carrierRepository, ICarrierConfigurationRepository carrierConfigurationRepository)
+    public OrderService(IOrderRepository orderRepository, IUnitOfWork unitOfWork, IMapper mapper, ICarrierConfigurationRepository carrierConfigurationRepository)
     {
         _orderRepository = orderRepository;
         _unitOfWork = unitOfWork;
         _mapper = mapper;
-        _carrierRepository = carrierRepository;
         _carrierConfigurationRepository = carrierConfigurationRepository;
     }
 
@@ -44,10 +40,11 @@ public class OrderService : IOrderService
         var result = await _orderRepository.AddAsync(order);
         await _unitOfWork.SaveChangeAsync();
         var orderResponse = _mapper.Map<OrderResponse>(result);
+
         return ServiceResult<OrderResponse>.Success(orderResponse);
     }
 
-    #region Create
+    #region CreateAsync
 
     //public async Task<ServiceResult<OrderResponse>> CreateAsync(CreateOrderRequest request)
     //{

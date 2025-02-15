@@ -8,4 +8,5 @@ public class OrderRepository : GenericRepository<Order>, IOrderRepository
     public OrderRepository(CargoDbContext context) : base(context)
     {
     }
+
 }

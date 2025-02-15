@@ -15,6 +15,7 @@ public static class ServiceExtensions
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
         services.AddScoped<IOrderService, OrderService>();
+        services.AddScoped<ICarrierConfigurationService, CarrierConfigurationService>();
 
         services.AddFluentValidationAutoValidation();
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
